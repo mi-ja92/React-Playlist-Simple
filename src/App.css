@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+li {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+  display: inline-block;
+  border: 2px solid;
+  width: 200px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.delete-btn {
+  height: 33px;
+}
+
+.tabel {
+  transform: translateX(-28px);
+}
