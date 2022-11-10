@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./Form";
 import MyPlaylist from "./Playlist";
 import "./App.css";
+import Song from "./SongData";
 
 function Container() {
   const [inputText, setInputText] = useState("");
@@ -9,6 +10,18 @@ function Container() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [playlist, setPlaylist] = useState([]);
+  // const [status, setStatus] = useState("all");
+  // const [filteredSongs, setFilteredSongs] = useState([]);
+  // const filterHandler = () => {
+  //   switch (status) {
+  //     case "song":
+  //       setFilteredSongs(playlist.sort());
+  //       break;
+  //       case "Rock":
+  //       setFilteredSongs(playlist.filter => song.genre.includes("Rock"))
+  //   }
+
+  // }
 
   return (
     <div className="container">

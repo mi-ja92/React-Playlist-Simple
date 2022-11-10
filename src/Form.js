@@ -70,26 +70,60 @@ function Form({
         placeholder="Artist"
       />
       <label>
-        <select value={genre} onChange={inputGenreHandler} name="genre">
-          <option value="blank"> </option>
-          <option value="Rock"> Rock </option>
-          <option value="Pop">Pop </option>
-          <option value="Alternative">Alternative</option>
+        <select
+          className="selectcontainer"
+          value={genre}
+          onChange={inputGenreHandler}
+          name="genre"
+        >
+          <option className="select" value="blank">
+            {" "}
+            Genre
+          </option>
+          <option className="select" value="Rock">
+            {" "}
+            Rock{" "}
+          </option>
+          <option className="select" value="Pop">
+            Pop{" "}
+          </option>
+          <option className="select" value="Alternative">
+            Alternative
+          </option>
         </select>
       </label>
 
       <label>
-        <select value={rating} onChange={inputRatingHandler} name="rating">
-          <option value="blank"> </option>
-          <option value="one"> 1</option>
-          <option value="two">2 </option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
+        <select
+          className="selectcontainer"
+          value={rating}
+          onChange={inputRatingHandler}
+          name="rating"
+        >
+          <option className="select" value="blank">
+            {" "}
+            Rating
+          </option>
+          <option className="select" value="1">
+            {" "}
+            1
+          </option>
+          <option className="select" value="2">
+            2{" "}
+          </option>
+          <option className="select" value="3">
+            3
+          </option>
+          <option className="select" value="4">
+            4
+          </option>
+          <option className="select" value="5">
+            5
+          </option>
         </select>
       </label>
 
-      <button type="button" onClick={submitPlaylistHandler}>
+      <button className="button1" type="button" onClick={submitPlaylistHandler}>
         Add song to playlist
       </button>
     </form>

@@ -7,11 +7,11 @@ function MyPlaylist({ playlist, setPlaylist }) {
   return (
     <div className="myplaylist">
       <ul className="list">
-        <li className="tabel">
-          <p>Title</p>
-          <p>Artist</p>
-          <p>Genre</p>
-          <p>Rating</p>
+        <li className="overview">
+          <p className="songtitle">Title</p>
+          <p className="songtitle">Artist</p>
+          <p className="tabel">Genre</p>
+          <p className="tabel">Rating</p>
         </li>
 
         {playlist.map((song) => (
@@ -24,6 +24,7 @@ function MyPlaylist({ playlist, setPlaylist }) {
             id={song.id}
             setPlaylist={setPlaylist}
             song={song}
+            playlist={playlist}
           />
         ))}
       </ul>
