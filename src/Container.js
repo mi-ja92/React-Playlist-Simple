@@ -10,18 +10,10 @@ function Container() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [playlist, setPlaylist] = useState([]);
-  // const [status, setStatus] = useState("all");
-  // const [filteredSongs, setFilteredSongs] = useState([]);
-  // const filterHandler = () => {
-  //   switch (status) {
-  //     case "song":
-  //       setFilteredSongs(playlist.sort());
-  //       break;
-  //       case "Rock":
-  //       setFilteredSongs(playlist.filter => song.genre.includes("Rock"))
-  //   }
+  const [filteredSongs, setFilteredSongs] = useState("all");
+  // const [filter, setFilter]= useState([])
 
-  // }
+  // const filter
 
   return (
     <div className="container">
@@ -37,11 +29,11 @@ function Container() {
         setRating={setRating}
         playlist={playlist}
         setPlaylist={setPlaylist}
+        filteredSongs={filteredSongs}
+        setFilteredSongs={setFilteredSongs}
       />
       <br />
       <br />
-      <h1>My Playlist</h1>
-
       <MyPlaylist setPlaylist={setPlaylist} playlist={playlist} />
     </div>
   );

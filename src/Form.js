@@ -11,11 +11,12 @@ function Form({
   setArtist,
   setGenre,
   setRating,
+  filteredSongs,
+  setFilteredSongs,
 }) {
-  //   const allValuesHandler = (event) => {
-  //     console.log(event.target.value);
-  //     setInputText(event.target.value);
-  //   };
+  const filterHandler = (event) => {
+    setFilteredSongs(event.target.value);
+  };
 
   const inputTextHandler = (event) => {
     console.log(event.target.value);
@@ -126,6 +127,33 @@ function Form({
       <button className="button1" type="button" onClick={submitPlaylistHandler}>
         Add song to playlist
       </button>
+      <br />
+      <br />
+      <h1>My Playlist</h1>
+      <label>
+        <select
+          className="selectcontainer"
+          value={genre}
+          onChange={filterHandler}
+          name="genre"
+        >
+          <option className="select" value="blank">
+            {" "}
+            Genre
+          </option>
+          <option className="select" value="Rock">
+            {" "}
+            Rock{" "}
+          </option>
+          <option className="select" value="Pop">
+            Pop{" "}
+          </option>
+          <option className="select" value="Alternative">
+            Alternative
+          </option>
+        </select>
+        <button>Sort from A to Z</button>
+      </label>
     </form>
   );
 }
