@@ -1,5 +1,4 @@
 import React from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function Form({
   setInputText,
@@ -12,12 +11,7 @@ function Form({
   setArtist,
   setGenre,
   setRating,
-  // setFilteredSongs,
 }) {
-  // const filterHandler = (event) => {
-  //   setFilteredSongs(event.target.value);
-  // };
-
   const inputTextHandler = (event) => {
     console.log(event.target.value);
     setInputText(event.target.value);
@@ -107,7 +101,7 @@ function Form({
           </option>
           <option className="select" value="1">
             {" "}
-            <i className="fa-regular fa-star"></i>
+            1
           </option>
           <option className="select" value="2">
             2{" "}
@@ -130,30 +124,6 @@ function Form({
       <br />
       <br />
       <h1>My Playlist</h1>
-      <label>
-        <select
-          className="selectcontainer"
-          value={genre}
-          // onChange={testFilter}
-          name="genre"
-        >
-          <option className="select" value="blank">
-            {" "}
-            Genre
-          </option>
-          <option className="select" value="Rock">
-            {" "}
-            Rock{" "}
-          </option>
-          <option className="select" value="Pop">
-            Pop{" "}
-          </option>
-          <option className="select" value="Alternative">
-            Alternative
-          </option>
-        </select>
-        <button>Sort from A to Z</button>
-      </label>
     </form>
   );
 }

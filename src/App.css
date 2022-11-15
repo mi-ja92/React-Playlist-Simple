@@ -148,6 +148,52 @@ p {
   text-align: center;
 }
 
-.fa-regular {
-  color: yellow;
+.navbar {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.about-main {
+  border: solid white;
+  text-align: center;
+  padding: 5px;
+
+  flex: 0 1 auto;
+  align-self: center;
+  width: 30%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.about h1 {
+  border: none;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.about-p {
+  border: none;
+  text-align: left;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.foto {
+  height: 230px;
+  width: 230px;
+  padding: 5px;
+  margin: 5px;
+  flex: 0 1 auto;
+  align-self: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
