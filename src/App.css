@@ -151,6 +151,7 @@ p {
 .navbar {
   font-weight: bold;
   font-size: 30px;
+  border: solid whitesmoke;
 }
 
 .about-main {
