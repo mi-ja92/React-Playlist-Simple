@@ -147,3 +147,7 @@ p {
   transform: translateX(-31px);
   text-align: center;
 }
+
+.fa-regular {
+  color: yellow;
+}
