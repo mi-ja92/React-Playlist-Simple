@@ -6,6 +6,7 @@ function MyPlaylist({ playlist, setPlaylist }) {
   console.log(playlist);
   return (
     <div className="myplaylist">
+      <h1>My Playlist</h1>
       <ul className="list">
         <li className="overview">
           <p className="songtitle">Title</p>

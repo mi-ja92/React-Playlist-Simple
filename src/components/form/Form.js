@@ -124,7 +124,6 @@ function Form({
       </button>
       <br />
       <br />
-      <h1>My Playlist</h1>
     </form>
   );
 }
