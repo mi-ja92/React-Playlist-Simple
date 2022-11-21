@@ -1,6 +1,6 @@
 import React from "react";
-import Song from "./SongData";
-import "./App.css";
+import Song from "../song/SongData";
+import "./playlist.css";
 
 function MyPlaylist({ playlist, setPlaylist }) {
   console.log(playlist);

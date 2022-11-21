@@ -1,0 +1,13 @@
+.tabel {
+  background-color: slategray;
+  border-color: darkgray;
+  font-weight: bold;
+}
+
+.songtitle {
+  background-color: slategray;
+  border-color: darkgray;
+  font-weight: bold;
+  width: 400px;
+  height: 30px;
+}

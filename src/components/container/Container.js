@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Form from "./Form";
-import MyPlaylist from "./Playlist";
-import "./App.css";
+import Form from "../form/Form";
+import MyPlaylist from "../playlist/Playlist";
 
 function Container() {
   const [inputText, setInputText] = useState("");

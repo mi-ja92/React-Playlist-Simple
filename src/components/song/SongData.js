@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./song.css";
 
 function Song({ playlist, setPlaylist, text, artist, genre, rating, song }) {
   const deleteHandler = () => {

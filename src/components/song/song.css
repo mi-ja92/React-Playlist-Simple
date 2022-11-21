@@ -1,0 +1,25 @@
+.title {
+  width: 400px;
+  height: 30px;
+}
+
+.song p {
+  border-style: groove;
+}
+
+.delete-btn {
+  height: 47px;
+  opacity: 0.8;
+  transition: 0.3s;
+  background-color: red;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.delete-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+  background-color: red;
+}
