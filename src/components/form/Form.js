@@ -33,16 +33,17 @@ function Form({
 
   const submitPlaylistHandler = (event) => {
     event.preventDefault();
-    setPlaylist([
-      ...playlist,
-      {
-        text: inputText,
-        artist,
-        genre,
-        rating,
-        id: Math.random() * 1000,
-      },
-    ]);
+    if (inputText && artist && genre && rating)
+      setPlaylist([
+        ...playlist,
+        {
+          text: inputText,
+          artist,
+          genre,
+          rating,
+          id: Math.random() * 1000,
+        },
+      ]);
     setInputText("");
     setArtist("");
     setGenre("");

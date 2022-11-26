@@ -8,12 +8,23 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="about" element={<About />} />
-      <Route path="/" element={<App />} />
-    </Routes>
-  </BrowserRouter>
+  <div>
+    <ul class="navbar">
+      <li>
+        <a href="http://localhost:3000/about">About</a>{" "}
+      </li>
+      <br />
+      <li>
+        <a href="http://localhost:3000/">Songsaver</a>
+      </li>
+    </ul>
+    <BrowserRouter>
+      <Routes>
+        <Route path="about" element={<About />} />
+        <Route path="/" element={<App />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function

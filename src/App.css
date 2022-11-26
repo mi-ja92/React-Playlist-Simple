@@ -74,4 +74,10 @@ p {
   font-weight: bold;
   font-size: 30px;
   border: solid whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  padding: 10px;
 }
