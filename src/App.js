@@ -1,6 +1,5 @@
 import "./App.css";
 import Container from "../src/components/container/Container";
-import { Link } from "react-router-dom";
 
 function App() {
   return (

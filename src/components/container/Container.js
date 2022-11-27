@@ -8,7 +8,9 @@ function Container() {
   const [artist, setArtist] = useState("");
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
-  const [playlist, setPlaylist] = useState([]);
+  const [playlist, setPlaylist] = useState(
+    JSON.parse(localStorage.getItem("playlist"))
+  );
 
   useEffect(() => {
     window.localStorage.setItem("playlist", JSON.stringify(playlist));
