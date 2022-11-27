@@ -1,9 +1,10 @@
-import React from "react";
+import { React,} from "react";
 import Song from "../song/SongData";
 import "./playlist.css";
 
 function MyPlaylist({ playlist, setPlaylist }) {
   console.log(playlist);
+
   return (
     <div className="myplaylist">
       <h1>My Playlist</h1>

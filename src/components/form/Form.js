@@ -73,8 +73,7 @@ function Form({
           onChange={inputGenreHandler}
           name="genre"
         >
-          <option className="select" value="blank">
-            {" "}
+          <option value="" disabled selected hidden>
             Genre
           </option>
           <option className="select" value="Rock">
@@ -96,9 +95,9 @@ function Form({
           value={rating}
           onChange={inputRatingHandler}
           name="rating"
+          placeholder="Rating"
         >
-          <option className="select" value="blank">
-            {" "}
+          <option value="" disabled selected hidden>
             Rating
           </option>
           <option className="select" value="1">

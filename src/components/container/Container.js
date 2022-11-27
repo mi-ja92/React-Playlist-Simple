@@ -9,12 +9,15 @@ function Container() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [playlist, setPlaylist] = useState([]);
+
   useEffect(() => {
-    const playlist = JSON.parse(localStorage.getItem("playlist"));
-    if (playlist) {
-      setPlaylist(playlist);
-    }
-  }, []);
+    window.localStorage.setItem("playlist", JSON.stringify(playlist));
+  }, [playlist]);
+
+  useEffect(() => {
+    JSON.parse(localStorage.getItem("playlist"));
+  }, [playlist]);
+
   return (
     <div className="container">
       <h1>My Playlist App </h1>
