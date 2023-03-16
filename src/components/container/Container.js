@@ -9,7 +9,7 @@ function Container() {
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState("");
   const [playlist, setPlaylist] = useState(
-    JSON.parse(localStorage.getItem("playlist"))
+    JSON.parse(localStorage.getItem("playlist")) ?? []
   );
 
   useEffect(() => {
